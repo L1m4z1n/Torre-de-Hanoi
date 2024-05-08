@@ -1,0 +1,410 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.subtitulo {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #ffffc7;
+}
+
+.header {
+  background-color: white;
+  height: 50px;
+  font-size: 25px;
+}
+
+.titulobox {
+  background-color: #548687;
+  height: 140px;
+  text-align: center;
+}
+
+.textotitulo {
+  color: #ffffc7;
+  padding-top: 45px;
+  font-size: 45px;
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+}
+
+.menu-main {
+  margin: 30px 0px 30px 50px;
+}
+
+.menu {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  margin-right: 30px;
+  font-size: 30px;
+  color: #473335;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: #ffffc7;
+}
+
+.rodap:hover {
+  color: #548687;
+}
+
+footer {
+  background-color: #b1413f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.rodap {
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 25px;
+  font-size: 50px;
+  color: #ffffc7;
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.hanoi {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 450px;
+  width: 600px;
+  background: #ffffc7;
+  position: relative;
+}
+
+.tower {
+  position: relative;
+  cursor: pointer;
+}
+
+.tower:hover {
+  background: #d1d19e;
+}
+
+.tower::after {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 200px;
+  bottom: 0;
+  left: 90px;
+  background: #600;
+  border-radius: 10px 10px 0 0;
+}
+
+.disk {
+  position: absolute;
+  background: linear-gradient(0deg, #473335, #548687);
+  height: 35px;
+  width: 180px;
+  border-radius: 15px;
+  margin-left: 10px;
+  z-index: 2;
+  transition: left 0.5s, bottom 0.5s 0.5s;
+  pointer-events: none;
+}
+
+.passos {
+  margin-left: 900px;
+}
+
+.segundo {
+  margin-left: 930px;
+}
+
+.d1 {
+  width: 60px;
+  margin-left: 70px;
+}
+.d2 {
+  width: 90px;
+  margin-left: 55px;
+}
+.d3 {
+  width: 120px;
+  margin-left: 40px;
+}
+.d4 {
+  width: 150px;
+  margin-left: 25px;
+}
+.t1 {
+  left: 0;
+}
+.t2 {
+  left: 200px;
+}
+.t3 {
+  left: 400px;
+}
+.p1 {
+  bottom: 0;
+}
+.p2 {
+  bottom: 35px;
+}
+.p3 {
+  bottom: 70px;
+}
+.p4 {
+  bottom: 105px;
+}
+.p5 {
+  bottom: 140px;
+}
+.p0 {
+  bottom: 350px;
+}
+
+* {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+.menu {
+  margin-right: 5vw;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.menu2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vw;
+  padding: 0.5vw;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.menu2 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1vw;
+  margin: 0.5vw;
+}
+
+#bot {
+  position: relative;
+  left: 40vw;
+  bottom: 2vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  color: #473335;
+  cursor: pointer;
+}
+
+#bot:hover {
+  transform: scale(1.1);
+  color: #ffffc7;
+}
+
+.menu-main {
+  padding: 10vh 0 0 10vw;
+  background: white;
+  width: 100vw;
+  height: 40vh;
+  margin: 0px;
+}
+
+.pamonha {
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 2vw;
+  letter-spacing: 0.2vw;
+  width: 20vw;
+  height: 5vw;
+  color: #4b505a;
+}
+
+.button {
+  width: 9vw;
+  height: 4vw;
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  background: none;
+  border: none;
+  color: #473335;
+  margin-top: 5vw;
+  margin-left: 24vw;
+  margin-bottom: 10vh;
+  background: #ffffc7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #473335;
+  color: #ffffc7;
+}
+
+a.menu {
+  display: inline-block;
+  padding: 1vw 2vw;
+  color: #473335;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a.menu:hover {
+  transform: scale(1.1);
+  color: #ffffc7;
+}
+
+a#game {
+  width: 8vw;
+  height: 10vh;
+  text-align: center;
+  padding: 1vw;
+  background: #ffffc7;
+  color: #473335;
+  text-decoration: none;
+  border-radius: 21px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+a#game:hover {
+  transform: scale(1.1);
+  background-color: #473335;
+  color: #ffffc7;
+}
+
+footer {
+  background-color: #b1413f;
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-right: 2vw;
+}
+
+.rodap {
+  font-size: 2.5vw;
+  color: #ffffc7;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 20vw;
+}
+
+#emp {
+  margin-left: -20vw;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  position: relative;
+  left: 83vw;
+  top: -3vw;
+  width: 5vw;
+  height: 5vw;
+}
+
+.mobile-menu div {
+  width: 1.5vw;
+  height: 0.1vw;
+  background: #473335;
+  margin: 0.4vw;
+}
+
+.mobile-menu div:hover {
+  background: #fbaa68;
+}
+
+ul li {
+  position: inherit;
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  padding: 2vw 2.5vw;
+  color: #fff;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown {
+  display: none;
+}
+
+ul li a:hover {
+  background: #ffffc7;
+  border-radius: 2vw;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.ul-pai {
+  position: relative;
+}
+
+.menu3 {
+  font-size: 1vw;
+  color: #473335;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  left: 79.05vw;
+  bottom: 6vw;
+  text-align: right;
+}
+
+.dir {
+  position: relative;
+  left: 40vw;
+}
+
+.rod {
+  text-align: left;
+  display: inline-block;
+  margin-left: 5vw;
+  position: relative;
+  bottom: -1vw;
+  left: -35vw;
+}
+
+.banana {
+  position: relative;
+  left: 33vw;
+  margin-bottom: 100px;
+}
+
+.divido {
+  position: relative;
+  margin: 0vh 0vh 5vh 0vh;
+  left: -7vw;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../static/style_home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavoon&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Burned&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="menu-main">
+      <nav>
+        <a href="#home" class="menu">HOME</a>
+        <a href="/table" class="menu">TABELA</a>
+        <a href="/game" class="menu" id="game">GAME</a>
+        <ul>
+          <li>
+            <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <ul class="dropdown">
+              <li><a class="menu3" href="#home">HOME</a></li>
+              <li><a class="menu3" href="/table">TABELA</a></li>
+              <li><a class="menu3" href="/game">GAME</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div id="dropdown-menu" class="oculto"></div>
+    </header>
+    <div class="teste">
+      <picture
+        ><source media="(max-widith: 600px)" srcset="" />
+        <img
+          class="logo-image"
+          src="https://static.wixstatic.com/media/4a2ef7_f7b95278afe34dc3a3eb64aee5fd4a08~mv2.png/v1/fill/w_720,h_480,al_c,lg_1,q_85,enc_auto/4a2ef7_f7b95278afe34dc3a3eb64aee5fd4a08~mv2.png"
+          alt="Bebê construindo torre de hanoi"
+      /></picture>
+      <section>
+        <h1>Torre de Hanoi</h1>
+        <button class="button" onclick="exibirTexto()">Aperta</button>
+        <script>
+          function exibirTexto() {
+            var textoDiv = document.getElementById("textoDiv");
+            var texto = document.getElementById("texto");
+            if (textoDiv.style.display === "none") {
+              textoDiv.style.display = "block";
+              texto.style.display = "block";
+            } else {
+              textoDiv.style.display = "none";
+              texto.style.display = "none";
+            }
+          }
+
+          function fecharDiv() {
+            var textoDiv = document.getElementById("textoDiv");
+            var texto = document.getElementById("texto");
+            textoDiv.style.display = "none";
+            texto.style.display = "none";
+          }
+        </script>
+      </section>
+    </div>
+    <div id="textoDiv" class="texto-2">
+      <button class="fechar" onclick="fecharDiv()">X</button>
+      <p id="texto" class="texto" style="display: none">
+        A Torre de Hanói é um dos mais famosos jogos de Matemática. Ele consiste
+        de uma base contendo três pilares (hastes), em um dos quais está
+        disposta uma torre formada por alguns discos colocados uns sobre os
+        outros, em ordem crescente de diâmetro, de cima para baixo. O número de
+        discos pode variar. Observe a disposição inicial de um jogo com seis
+        discos.
+      </p>
+    </div>
+    <div class="facul">
+      <h2>Faculdade UDF</h2>
+      <div id="circ">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15356.096878256243!2d-47.8994031!3d-15.8026769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3aea806d74eb%3A0x139eddc3c7f58173!2sUDF%20-%20Centro%20Universit%C3%A1rio%20-%20Campus%20Sede!5e0!3m2!1spt-BR!2sbr!4v1712667222052!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="int">
+      <h1><a class="sub-int" href="#q">INTEGRANTES</a></h1>
+    </div>
+  </body>
+
+  <footer>
+    <nav class="rodap">
+      <a href="#home" class="rodap" id="emp">HOME</a>
+      <a href="/game" class="rodap">GAME </a>
+      <a href="/table" class="rodap" id="rest">TABELA</a>
+    </nav>
+    <hr />
+    <p class="rod">Brasil</p>
+    <p class="rod">Política de privacidade</p>
+    <p class="rod">Termos de Uso</p>
+    <p class="dir">&copy;2024 <i>Todos os direitos reservados.</i></p>
+  </footer>
+</html>
